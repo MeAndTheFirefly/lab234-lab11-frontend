@@ -6,9 +6,8 @@ services:
       - "8084:8080"
     volumes:
       - type: bind
-      - source: ./data
-      - target: /data
-
+        source: ./data
+        target: /data
   frontend: 
     image: "meandthefirefly/se234-lab11-frontend:latest"
     ports: 
