@@ -4,6 +4,11 @@ services:
     image: "dto80/234-lab11:latest"
     ports: 
       - "8084:8080"
+    volumes:
+      - type: bind
+      - source: ./data
+      - target: /data
+
   frontend: 
     image: "meandthefirefly/se234-lab11-frontend:latest"
     ports: 
